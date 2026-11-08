@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="style.css">
 <title>NMEC Museum</title>
+<script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"></script>
 </head>
 <body>
 <header class="nav">
@@ -99,7 +100,65 @@
 </div>
 <img src="img/Sepia Egyptian Landmarks Landscape 1.png" alt="Egyptian landmarks">
 </section>
-
-
+<section class="gallery" id="gallery">
+<div class="gallery-text">
+<p class="tag2">PERMANENT GALLERY</p>
+<h2>THE ROYAL<br>MUMMIES<br>HALL</h2>
+<p>Stand before twenty-two kings and queens of ancient Egypt, presented in a hall that evokes the hush of the Valley of the Kings.</p>
+<button class="btn sm">Explore the Gallery →</button>
+</div>
+<img src="img/mummies.png" alt="Royal Mummies Hall">
+</section>
+<section class="more">
+<div class="more-text">
+<h2>MORE THAN<br><span>A MUSEUM</span></h2>
+<p>Overlooking the Ain El-Sira lake in historic Fustat, the National Museum of Egyptian Civilization is the first museum to present the full arc of Egypt's story — from prehistory to the present day — under one roof.</p>
+</div>
+<div class="stats">
+<div><span>🏛</span><h3>50,000+</h3><p>Artifacts</p></div>
+<div><span>⏳</span><h3>7</h3><p>Historical Periods</p></div>
+<div><span>🌍</span><h3>Millions</h3><p>Visitors Worldwide</p></div>
+</div>
+<model-viewer id="coffin" src="img/coffin_of_ankh-khonsu.glb" alt="Coffin of Ankh-khonsu" camera-controls auto-rotate camera-orbit="0deg 75deg 60%" min-camera-orbit="auto auto 40%" max-camera-orbit="auto auto 100%" shadow-intensity="1" exposure="1.1" interaction-prompt="none"></model-viewer></section>
+<footer id="visit">
+<div class="f-about">
+<div class="logo">
+<span class="logo-icon">🏛</span>
+<h2>NMEC</h2>
+</div>
+<p><b>One museum, three eras — the continuous story of Egyptian civilization in Fustat, Old Cairo.</b></p>
+</div>
+<div>
+<h4>Quick Links</h4>
+<p>Home</p>
+<p>Artifacts</p>
+<p>Visit</p>
+<p>About</p>
+<p>Contact</p>
+</div>
+<div>
+<h4>Visit</h4>
+<p>Opening Hours</p>
+<p>Tickets</p>
+<p>How to Get Here</p>
+<p>Museum Map</p>
+<p>Accessibility</p>
+</div>
+<div>
+<h4>Follow Us</h4>
+<div class="social"><span>◎</span><span>f</span><span>▶</span></div>
+</div>
+<p class="copy">© 2024 National Museum of Egyptian Civilization. All rights reserved.</p>
+</footer>
+<script>
+let coffin = document.getElementById("coffin");
+coffin.onclick = function(){
+if(coffin.hasAttribute("auto-rotate")){
+coffin.removeAttribute("auto-rotate");
+}else{
+coffin.setAttribute("auto-rotate","");
+}
+};
+</script>
 </body>
 </html>
