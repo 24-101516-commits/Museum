@@ -1,0 +1,301 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Statue of Akhenaten | NMEC</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="Sepia Egyptian Landmarks Landscape 1.png>
+<script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.1.0/model-viewer.min.js"></script>
+</head>
+<body class="art-body" data-id="5">
+
+<header class="nav">
+  <div class="logo">
+    <span class="logo-icon">𓉐</span>
+    <h2>NMEC</h2>
+    <span class="logo-line"></span>
+    <p>NATIONAL MUSEUM OF<br>EGYPTIAN CIVILIZATION</p>
+  </div>
+  <nav class="links">
+    <a href="index.html#home">Home</a>
+    <a href="index.html#eras">About</a>
+    <a href="index.html#artifacts">Artifacts</a>
+    <a href="#visit">Contact</a>
+    <a href="index.html#gallery">Gallery</a>
+    <a href="#visit">Visit</a>
+  </nav>
+  <div class="nav-right">
+    <span class="search">⌕</span>
+    <span class="lang">EN / AR</span>
+    <a class="btn nav-visit" href="#visit">PLAN YOUR VISIT</a>
+  </div>
+</header>
+
+<section class="art-page">
+
+  <div class="thumbs">
+    <img class="on" src="img/artifact5-front.png" alt="Front view" data-orbit="0deg 78deg auto">
+    <img src="img/artifact5-side.png" alt="Side view" data-orbit="90deg 78deg auto">
+    <img src="img/artifact5-back.png" alt="Back view" data-orbit="200deg 78deg auto">
+  </div>
+
+  <div class="art-arch">
+    <div class="sparks"></div>
+    <div class="pedestal"><span class="ring"></span><span class="ring r2"></span></div>
+    <div class="shadow"></div>
+
+    <div class="stage">
+      <div class="model-wrap">
+        <model-viewer id="mainModel"
+          src="img/artifact5.glb"
+          poster="img/artifact5-front.png"
+          alt="3D model of the Statue of Akhenaten"
+          camera-controls
+          auto-rotate
+          auto-rotate-delay="1200"
+          rotation-per-second="20deg"
+          camera-orbit="0deg 78deg auto"
+          field-of-view="28deg"
+          min-field-of-view="18deg"
+          max-field-of-view="40deg"
+          interaction-prompt="none"
+          shadow-intensity="1.2"
+          shadow-softness="1"
+          exposure="1.05"
+          touch-action="pan-y"
+          loading="eager"
+          reveal="auto"
+          disable-pan>
+        </model-viewer>
+        <img id="fallbackImg" class="fallback-img" src="img/artifact5-front.png" alt="Statue of Akhenaten">
+      </div>
+    </div>
+
+    <div class="hint"><span>↻</span> 360°</div>
+  </div>
+
+  <div class="pager">
+    <a class="prev" href="artifact4.html">‹ Previous</a>
+    <span class="count">05 / 05</span>
+    <a class="next off" href="#">Next ›</a>
+  </div>
+
+  <div class="art-info">
+    <span class="artifact-tag">✦ ANCIENT EGYPT</span>
+    <h1>The Statue of<br>Akhenaten</h1>
+    <p class="sub">A Revolutionary King</p>
+    <div class="line"></div>
+    <p class="info-p">A limestone statue of King Akhenaten, one of the most famous pharaohs of the 18th Dynasty. He introduced new religious ideas and is known for his unique artistic style.</p>
+
+    <div class="facts">
+      <div class="fact"><span class="fact-icon">♛</span><strong>PERIOD</strong><p>18th Dynasty</p></div>
+      <div class="fact"><span class="fact-icon">◇</span><strong>MATERIAL</strong><p>Limestone</p></div>
+      <div class="fact"><span class="fact-icon">↕</span><strong>HEIGHT</strong><p>65 cm</p></div>
+      <div class="fact"><span class="fact-icon">▦</span><strong>REIGN</strong><p>1353–1336 BC</p></div>
+    </div>
+
+    <div class="btns">
+      <button class="btn grad" id="view3dBtn">View in 3D ↗</button>
+      <button class="btn outline" id="favBtn">♡ Add to Favorites</button>
+    </div>
+
+    <div class="about-section">
+      <h2>About This Artifact</h2>
+      <div class="line"></div>
+      <p class="about-p">A distinctive statue with stylized features, including the oval face, long neck, and slim physique, which reflect the artistic changes during Akhenaten's reign. It represents a major shift in Egyptian art and religion, focusing on the worship of the sun disk Aten.<span id="moreText"> The statue shows the king with soft, curved lines unlike the strict style used by earlier pharaohs.</span></p>
+      <button class="read" id="readBtn">Read More ⌄</button>
+    </div>
+  </div>
+
+</section>
+
+<div class="model-overlay" id="modelOverlay">
+  <div class="model-box">
+    <button class="model-close" id="closeModel" aria-label="Close">✕</button>
+    <h2>Explore in 3D</h2>
+    <p>Drag to rotate · scroll to zoom · tap the AR icon to place it in your room</p>
+    <model-viewer id="bigModel"
+      data-src="img/artifact5.glb"
+      camera-controls auto-rotate
+      ar ar-modes="webxr scene-viewer quick-look"
+      shadow-intensity="1" exposure="1.05">
+    </model-viewer>
+  </div>
+</div>
+
+<footer id="visit">
+  <div class="footer-col footer-about">
+    <div class="logo"><span class="logo-icon">𓉐</span><h2>NMEC</h2></div>
+    <p>One museum, three eras — the continuous story of Egyptian civilization in Fustat, Old Cairo.</p>
+  </div>
+  <div class="footer-col">
+    <h4>Quick Links</h4>
+    <a href="index.html">Home</a>
+    <a href="index.html#artifacts">Artifacts</a>
+    <a href="#visit">Visit</a>
+    <a href="index.html#eras">About</a>
+    <a href="#visit">Contact</a>
+  </div>
+  <div class="footer-col">
+    <h4>Visit</h4>
+    <p>Opening Hours</p><p>Tickets</p><p>How to Get Here</p><p>Museum Map</p><p>Accessibility</p>
+  </div>
+  <div class="footer-col">
+    <h4>Follow Us</h4>
+    <div class="social"><span>◎</span><span>f</span><span>▶</span></div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2024 National Museum of Egyptian Civilization. All rights reserved.</span>
+    <span>Privacy Policy | Terms of Use</span>
+  </div>
+</footer>
+
+<script>
+(function () {
+  'use strict';
+
+  var body = document.body;
+  var id = body.dataset.id || '1';
+  var $ = function (s, r) { return (r || document).querySelector(s); };
+  var $$ = function (s, r) { return Array.prototype.slice.call((r || document).querySelectorAll(s)); };
+  var reduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  var arch = $('.art-arch');
+  var stage = $('.stage');
+  var mv = $('#mainModel');
+  var fallback = $('#fallbackImg');
+  var hint = $('.hint');
+  var thumbs = $$('.thumbs img');
+  var modelFailed = false;
+  var resumeTimer;
+
+  /* ---------- floating gold sparkles ---------- */
+  var sparks = $('.sparks');
+  if (sparks && !reduced) {
+    for (var i = 0; i < 12; i++) {
+      var s = document.createElement('span');
+      var size = 3 + Math.random() * 6;
+      s.className = 'spark';
+      s.style.width = s.style.height = size + 'px';
+      s.style.left = (10 + Math.random() * 80) + '%';
+      s.style.setProperty('--dx', (Math.random() * 6 - 3) + 'vw');
+      s.style.animationDuration = (6 + Math.random() * 6) + 's';
+      s.style.animationDelay = (Math.random() * 8) + 's';
+      sparks.appendChild(s);
+    }
+  }
+
+  /* ---------- 3D model (main statue) ---------- */
+  function hideHint() { if (hint) hint.classList.add('gone'); }
+
+  if (mv) {
+    mv.addEventListener('error', function () {
+      modelFailed = true;
+      mv.style.display = 'none';
+      if (fallback) fallback.style.display = 'block';
+      hideHint();
+    });
+    mv.addEventListener('camera-change', function (e) {
+      if (e.detail && e.detail.source === 'user-interaction') hideHint();
+    });
+  }
+
+  /* ---------- thumbnails = camera angles ---------- */
+  thumbs.forEach(function (t) {
+    t.addEventListener('click', function () {
+      thumbs.forEach(function (x) { x.classList.remove('on'); });
+      t.classList.add('on');
+
+      if (mv && !modelFailed) {
+        mv.autoRotate = false;
+        mv.cameraOrbit = t.dataset.orbit || '0deg 78deg auto';
+        clearTimeout(resumeTimer);
+        resumeTimer = setTimeout(function () { mv.autoRotate = true; }, 5000);
+      } else if (fallback) {
+        fallback.style.opacity = 0;
+        setTimeout(function () { fallback.src = t.src; fallback.style.opacity = 1; }, 220);
+      }
+    });
+  });
+
+  /* ---------- subtle 3D tilt that follows the mouse ---------- */
+  if (arch && stage && !reduced) {
+    arch.addEventListener('pointermove', function (e) {
+      if (e.pointerType === 'touch') return;
+      var r = arch.getBoundingClientRect();
+      var px = (e.clientX - r.left) / r.width - 0.5;
+      var py = (e.clientY - r.top) / r.height - 0.5;
+      stage.style.transform = 'rotateY(' + (px * 8) + 'deg) rotateX(' + (-py * 5) + 'deg)';
+    });
+    arch.addEventListener('pointerleave', function () {
+      stage.style.transform = '';
+    });
+  }
+
+  /* ---------- favorites (remembered per artifact) ---------- */
+  var favBtn = $('#favBtn');
+  var favKey = 'nmec-fav-' + id;
+  var OFF = '♡ Add to Favorites';
+  var ON = '♥ Added to Favorites';
+
+  function readFav() { try { return localStorage.getItem(favKey) === '1'; } catch (e) { return false; } }
+  function saveFav(v) { try { localStorage.setItem(favKey, v ? '1' : '0'); } catch (e) {} }
+  function paintFav(v) {
+    favBtn.innerHTML = v ? ON : OFF;
+    favBtn.classList.toggle('active', v);
+  }
+
+  if (favBtn) {
+    paintFav(readFav());
+    favBtn.addEventListener('click', function () {
+      var v = !favBtn.classList.contains('active');
+      paintFav(v);
+      saveFav(v);
+      favBtn.classList.remove('pop');
+      void favBtn.offsetWidth;
+      favBtn.classList.add('pop');
+    });
+  }
+
+  /* ---------- read more / less ---------- */
+  var readBtn = $('#readBtn');
+  var moreText = $('#moreText');
+  if (readBtn && moreText) {
+    readBtn.addEventListener('click', function () {
+      var open = moreText.classList.toggle('show');
+      readBtn.innerHTML = open ? 'Read Less ⌃' : 'Read More ⌄';
+    });
+  }
+
+  /* ---------- fullscreen 3D viewer ---------- */
+  var overlay = $('#modelOverlay');
+  var big = $('#bigModel');
+  var openBtn = $('#view3dBtn');
+  var closeBtn = $('#closeModel');
+
+  function openOverlay() {
+    if (big && !big.getAttribute('src')) big.setAttribute('src', big.dataset.src);
+    overlay.classList.add('open');
+    body.classList.add('noscroll');
+    closeBtn.focus();
+  }
+  function closeOverlay() {
+    overlay.classList.remove('open');
+    body.classList.remove('noscroll');
+    openBtn.focus();
+  }
+
+  if (overlay && openBtn && closeBtn) {
+    openBtn.addEventListener('click', openOverlay);
+    closeBtn.addEventListener('click', closeOverlay);
+    overlay.addEventListener('click', function (e) { if (e.target === overlay) closeOverlay(); });
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && overlay.classList.contains('open')) closeOverlay();
+    });
+  }
+})();
+</script>
+</body>
+</html>
